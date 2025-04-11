@@ -18,6 +18,8 @@
   BUILD_TARGETS                  = DEBUG|RELEASE|NOOPT
   SKUID_IDENTIFIER               = DEFAULT
 
+!include MdePkg/MdeLibs.dsc.inc
+
 [LibraryClasses]
   DebugLib|MdePkg/Library/BaseDebugLibNull/BaseDebugLibNull.inf
   BaseLib|MdePkg/Library/BaseLib/BaseLib.inf
@@ -33,7 +35,6 @@
   TimerLib|MdePkg/Library/BaseTimerLibNullTemplate/BaseTimerLibNullTemplate.inf
   DeviceStateLib|MdeModulePkg/Library/DeviceStateLib/DeviceStateLib.inf
   RegisterFilterLib|MdePkg/Library/RegisterFilterLibNull/RegisterFilterLibNull.inf
-  NULL|MdePkg/Library/StackCheckLibNull/StackCheckLibNull.inf
 
   DebugTransportLib|DebuggerFeaturePkg/Library/DebugTransportSerialLib/DebugTransportSerialLib.inf
   WatchdogTimerLib|DebuggerFeaturePkg/Library/WatchdogTimerLibNull/WatchdogTimerLibNull.inf
